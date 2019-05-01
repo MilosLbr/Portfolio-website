@@ -1,0 +1,38 @@
+.aboutMe{
+    position: relative;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.aboutMeImage{
+    border: 1px solid transparent;
+    display: inline-block;
+    width: 350px;
+    height:  350px;
+    border-radius: 50%;
+    background-image: url('../images/profile.png');
+    background-position: 10% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutMeTextContainer{
+    background-color: #8DC63F;
+}
+
+.aboutMeText{
+    color:white;
+    padding: 10%;
+    font-size: 1.2rem;
+}
+
+.underlay{
+    position: absolute;
+    top: 235px;
+    left: -250px;
+    transform: rotate(-15deg);
+    z-index: -1;
+    height: 300px;
+    width: 200%;
+    background-color: rgba(10, 107, 211, 0.9);
+}

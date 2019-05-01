@@ -1,0 +1,60 @@
+.hero{
+    margin-bottom: 50px;
+    height: 100vh;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url('../images/heroimage1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.heroTitle{
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.heroTitle a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+.heroMainTitle{
+    font-size: 86px;
+    line-height: 1.2;
+    position: relative;
+
+    @media screen and (max-width: 425px) {
+        font-size: 68px;
+    }
+}
+.heroMainTitle a{
+    position: relative;
+}
+
+.heroSubtitle{
+    position: relative;
+}
+
+.toBottom{
+    position: absolute;
+    bottom: 35px;
+    /* animation: 2.3s fadeIn ease-in; */
+}
+
+.arrowDown{
+    display: inline-block;
+    position: relative;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 15px;
+    height : 15px;
+    transform: translateY(-2px) rotate(45deg);
+    animation:  jumpingArow 6s linear 3s infinite;
+}

@@ -1,0 +1,25 @@
+.row{
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+
+    @include smallDevices{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+[class*='col-'] {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 48.01em){
+    .colmd-50{
+        width: 50%;
+    }
+}
+

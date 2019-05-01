@@ -1,0 +1,16 @@
+// base imports
+@import './base/base.scss';
+@import './base//mediaQueries.scss';
+@import './base/animations.scss';
+
+// layout imports
+@import './layout/layout.scss';
+
+// module imports
+@import './modules/imageContainer.scss';
+@import './modules//sectionTitle.scss';
+@import './modules/hero.scss';
+@import './modules/navigation.scss';
+@import './modules/buttons.scss';
+@import './modules/aboutMe.scss';
+@import './modules/canvas.scss';

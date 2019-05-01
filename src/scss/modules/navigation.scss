@@ -1,0 +1,61 @@
+.navbar{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.navbar a{
+    opacity: 0.8;
+}
+.navbar a.btn{
+    opacity: 1;
+}
+.navbar a:hover{
+    opacity: 1;
+}
+
+.resumeTab{
+    width: 30%;
+}
+
+.otherNavLinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resumeTooltip{
+    display: none;
+}
+#pdfLink{
+    position: relative;
+    display: inline-block;
+}
+
+#pdfLink:hover  #resumeTooltip{
+    display: inline-block;
+    position: absolute;
+    left: 130%;
+    top: 3px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 3px; 
+}
+
+#resumeTooltip::after{
+    content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent rgba(0, 0, 0, 0.5)   transparent transparent;
+}
