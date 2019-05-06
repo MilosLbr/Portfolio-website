@@ -1,13 +1,20 @@
 .jumpUp{
-    animation-name: jumpUp;
-    animation-duration: 1.4s;
-    animation-timing-function: ease-in;
+    animation: jumpUp 1.4s ease-in;
 }
 .fallDown{
-    animation-name: fallDown;
-    animation-duration: 2.2s;
-    animation-timing-function: linear;
     animation: fallDown 2.2s linear, float 15s ease-in-out 2.2s infinite ;
+}
+
+.floatInBottom{
+    animation: floatInBottom 0.9s ease-out forwards;
+}
+
+.delay05{
+    animation-delay: 0.5s;
+}
+
+.delay1{
+    animation-delay: 1s;
 }
 
 
@@ -77,5 +84,20 @@
     }
     8%, 16%, 24%{
         transform: translateY(-2px) rotate(45deg);
+    }
+}
+
+@keyframes floatInBottom{
+    from {
+        opacity: 0;
+        position: relative;
+        top: 50px;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        position:relative;
+        top: 0;
+        visibility: visible;
     }
 }
