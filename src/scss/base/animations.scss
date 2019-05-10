@@ -9,6 +9,14 @@
     animation: floatInBottom 0.9s ease-out forwards;
 }
 
+.floatInRight {
+    animation: floatInRight 0.5s ease-out forwards;
+}
+
+.floatInLeft{
+    animation: floatInLeft 0.5s ease-out forwards;
+}
+
 .delay05{
     animation-delay: 0.5s;
 }
@@ -98,6 +106,38 @@
         opacity: 1;
         position:relative;
         top: 0;
+        visibility: visible;
+    }
+}
+
+@keyframes floatInRight {
+    from {
+        opacity: 0;
+        position: relative;
+        left: 150px;
+        visibility: hidden;
+    }
+
+    to{
+        opacity: 1;
+        position: relative;
+        left:0;
+        visibility: visible;
+    }
+}
+
+@keyframes floatInLeft {
+    from {
+        opacity: 0;
+        position: relative;
+        right: 150px;
+        visibility: hidden;
+    }
+
+    to{
+        opacity: 1;
+        position: relative;
+        right:0;
         visibility: visible;
     }
 }
