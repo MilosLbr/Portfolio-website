@@ -26,7 +26,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/dist'
   },
 
   module: {
@@ -50,7 +49,9 @@ module.exports = {
         {
           loader: 'file-loader',
           options: {
+            name: '[name].[ext]',
             outputPath: 'images',
+            publicPath: 'images'
           },
         },
       ],
