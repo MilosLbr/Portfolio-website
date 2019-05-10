@@ -27,3 +27,9 @@
     }
 }
 
+@include extraLargeDevices{
+    .col-lg-50{
+        width:  50%;
+    }
+}
+
