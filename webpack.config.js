@@ -1,6 +1,11 @@
 const path = require('path');
 
 
+if (process.env.NODE_ENV === 'development') {
+  require('./index.html')
+}
+
+
 // plugins
 const webpack = require('webpack'); 
 const jqueryPlugin = new webpack.ProvidePlugin({
@@ -50,12 +55,16 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: 'images',
-            publicPath: 'images'
+            outputPath: 'images/',
+            publicPath: 'images/'
           },
         },
       ],
     },
+    {
+      test: /.html$/,
+      use: ['html-loader']
+    }
     
     ],
     

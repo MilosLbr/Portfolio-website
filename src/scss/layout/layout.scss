@@ -33,3 +33,8 @@
     }
 }
 
+.orderFirst-sm{
+    @media screen and (max-width: 1200px){
+        order: -1;
+    }
+}
