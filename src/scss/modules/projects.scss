@@ -1,0 +1,45 @@
+.projects{
+    text-align: center;
+}
+
+.projectTile{
+    flex-direction: column;
+
+    @include extraLargeDevices{
+        flex-direction: row;
+    }
+}
+
+.projectName{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(0, 131, 41);
+}
+
+.projectDescription{
+    font-size: 1.1em;
+}
+
+.techStack{
+    margin-bottom: 10px;
+}
+
+.techName{
+    display: inline-block;
+    margin: 0 5px 5px 0px;
+    background-color: rgb(55, 160, 0);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.linkTo a{
+    color: rgb(51, 169, 220);
+    font-size: 38px;
+    margin-right: 10px;
+}
+
+.linkTo a:hover{
+    color: rgb(21, 114, 182);
+}

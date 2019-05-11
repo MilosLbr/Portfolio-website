@@ -9,12 +9,12 @@
     animation: floatInBottom 0.9s ease-out forwards;
 }
 
-.floatInRight {
-    animation: floatInRight 0.5s ease-out forwards;
+.floatInFromLeft{
+    animation: floatInFromLeft 0.4s ease-out forwards;
 }
 
-.floatInLeft{
-    animation: floatInLeft 0.5s ease-out forwards;
+.floatInFromRight{
+    animation: floatInFromRight 0.4s ease-out forwards;
 }
 
 .delay05{
@@ -110,34 +110,32 @@
     }
 }
 
-@keyframes floatInRight {
+@keyframes floatInFromLeft{
     from {
         opacity: 0;
         position: relative;
-        left: 150px;
+        right: 100px;
         visibility: hidden;
     }
-
     to{
         opacity: 1;
-        position: relative;
-        left:0;
+        position:relative;
+        right: 0;
         visibility: visible;
     }
 }
 
-@keyframes floatInLeft {
+@keyframes floatInFromRight{
     from {
         opacity: 0;
         position: relative;
-        right: 150px;
+        left: 100px;
         visibility: hidden;
     }
-
     to{
         opacity: 1;
-        position: relative;
-        right:0;
+        position:relative;
+        left: 0;
         visibility: visible;
     }
 }

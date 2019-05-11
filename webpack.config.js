@@ -1,6 +1,11 @@
 const path = require('path');
 
 
+if (process.env.NODE_ENV === 'development') {
+  require('./index.html')
+}
+
+
 // plugins
 const webpack = require('webpack'); 
 const jqueryPlugin = new webpack.ProvidePlugin({
@@ -26,7 +31,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/dist'
   },
 
   module: {
@@ -50,11 +54,17 @@ module.exports = {
         {
           loader: 'file-loader',
           options: {
-            outputPath: 'images',
+            name: '[name].[ext]',
+            outputPath: 'images/',
+            publicPath: 'images/'
           },
         },
       ],
     },
+    {
+      test: /.html$/,
+      use: ['html-loader']
+    }
     
     ],
     
