@@ -4,6 +4,7 @@
 
 .projectTile{
     flex-direction: column;
+    margin-bottom: 20px;
 
     @include extraLargeDevices{
         flex-direction: row;
