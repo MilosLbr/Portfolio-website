@@ -2,7 +2,7 @@
     animation: jumpUp 1.4s ease-in;
 }
 .fallDown{
-    animation: fallDown 2.2s linear, float 15s ease-in-out 2.2s infinite ;
+    animation: fallDown 2.2s linear forwards, float 15s ease-in-out 2.2s infinite ;
 }
 
 .floatInBottom{
@@ -28,40 +28,43 @@
 
 @keyframes jumpUp{
     from{
-        top:70px;
+        transform: translateY(70px);
         opacity: 0;
     }
     to{
-        top: 0px;
+        transform: translateY(0px);
         opacity: 1;
     }
 }
 
 @keyframes fallDown{
     0%{
-        top: -1000px;
+        transform: translateY(-1000px)  rotateY(0deg) rotateZ(0deg);
     }
     50%{
-        top: 0px;
+        transform: translateY(0px);
     }
     60%{
-        top: -35px;
+        transform: translateY(-35px) rotateY(-2deg) rotateZ(2deg);
     }
     70%{
-        top:0px;
+        transform: translateY(0px) rotateY(-4deg) rotateZ(2deg);
     }
     80%{
-        top: -18px;
+        transform: translateY(-18px) rotateY(-6deg) rotateZ(2deg);
     }
     90%{
-        top: 0px;
+        transform: translateY(0px) rotateY(-8deg) rotateZ(2deg);
     }
     95%{
-        top: -10px;
+        transform: translateY(-10px) rotateY(-10deg) rotateZ(2deg);
+        
+    }
+    99%{
+        transform: translateY(0px) rotateY(-12deg) rotateZ(3deg);
     }
     100%{
-        top: 0px;
-        transform: translate(0, 0px) rotateY(-12deg) rotateZ(3deg);
+        transform: translate(0, 0px)   rotateY(-12deg) rotateZ(3deg);
     }
 }
 
@@ -98,14 +101,12 @@
 @keyframes floatInBottom{
     from {
         opacity: 0;
-        position: relative;
-        top: 50px;
+        transform: translateY(50px);
         visibility: hidden;
     }
     to{
         opacity: 1;
-        position:relative;
-        top: 0;
+        transform: translateY(0px);
         visibility: visible;
     }
 }
@@ -113,14 +114,12 @@
 @keyframes floatInFromLeft{
     from {
         opacity: 0;
-        position: relative;
-        right: 100px;
+        transform: translateX(-100px);
         visibility: hidden;
     }
     to{
         opacity: 1;
-        position:relative;
-        right: 0;
+        transform: translateX(0px);
         visibility: visible;
     }
 }
@@ -128,14 +127,12 @@
 @keyframes floatInFromRight{
     from {
         opacity: 0;
-        position: relative;
-        left: 100px;
+        transform: translateX(100px);
         visibility: hidden;
     }
     to{
         opacity: 1;
-        position:relative;
-        left: 0;
+        transform: translateX(0px);
         visibility: visible;
     }
 }
