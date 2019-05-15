@@ -44,3 +44,18 @@
 .linkTo a:hover{
     color: rgb(21, 114, 182);
 }
+
+.projectsFooter{
+    margin-bottom: 20px;
+}
+
+.projectsFooter a{
+    color: rgb(21, 114, 182);
+    font-family: 'Just Another Hand', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.projectsFooter a:hover{
+    opacity: 1;
+}

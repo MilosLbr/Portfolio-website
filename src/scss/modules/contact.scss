@@ -1,0 +1,58 @@
+.contact{
+    height: 500px;
+    position: relative;
+    background-color: rgba($color: #000000, $alpha: 0.75);
+}
+
+.contactBgImage{
+    height: 500px;
+    border-top: 1px solid transparent;
+   /*  background: linear-gradient(white 0 ,rgb(136, 136, 136) 20%, rgb(88, 88, 88) 40%, rgb(56, 56, 56) 60%, rgb(43, 43, 43) 80%, black 100% ); */
+    background: url('../images/codebackground.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    filter: blur(6px);
+}
+
+.contactInfoOverlay{
+    position: absolute;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contactTitle{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 50p;
+    font-size: 50px;
+
+    @media screen and (max-width: 550px){
+        font-size: 38px;
+    }
+}
+
+span.blinker{
+    animation: blink 1s step-end infinite;
+}
+
+.contactRow{
+    font-size: 32px;
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 550px){
+        font-size: 22px;
+    }
+}
+
+.contactLinks{
+    font-size: 50px;
+}
+
+.contact  a:hover{
+    color: rgb(62, 164, 236);
+}

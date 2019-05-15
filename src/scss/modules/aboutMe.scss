@@ -18,6 +18,13 @@
 
 .aboutMeTextContainer{
     background-color: #8DC63F;
+    border-radius: 10px;
+
+    @include smallDevices{
+        margin-right: 15px;
+        margin-left: 15px;
+        width: 95%;
+    }
 }
 
 .aboutMeText{
