@@ -15,7 +15,8 @@ const jqueryPlugin = new webpack.ProvidePlugin({
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlPlugin = new HtmlWebpackPlugin({
-    template: 'src/index.html'
+    template: 'src/index.html',
+    favicon: 'src/images/favicon.png'
 });
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
