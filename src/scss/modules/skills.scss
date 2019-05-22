@@ -12,13 +12,14 @@
 .skillSubHeader{
     text-align: center;
     font-size: 24px;
-    font-family: cursive;
+    margin: 5px 0 0 0;
 }
 
 .skillsList{
     align-items: stretch;
     justify-content: space-around;
     margin-bottom: 30px;
+    font-family: 'Gloria Hallelujah', cursive;
 
     @include smallDevices{
         padding: 5px;
@@ -41,7 +42,6 @@
     margin-left: 0;
     text-align: center;
     font-size: 1.5rem;
-    font-family: cursive;
 }
 
 .redBckg{
