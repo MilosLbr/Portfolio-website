@@ -22,6 +22,12 @@
     font-size: 1.1em;
 }
 
+.projectDescription a{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .techStack{
     margin-bottom: 10px;
 }
@@ -35,7 +41,7 @@
     border-radius: 4px;
 }
 
-.linkTo a{
+.linkTo a, .linkTo span{
     color: rgb(51, 169, 220);
     font-size: 38px;
     margin-right: 10px;
