@@ -1,7 +1,7 @@
 import ImageObject from './canvasImageObject.js';
 import {  checkCollision, resolveCollision } from './collisionFunctions.js';
 
-const imageNames = ['bootstrap', 'css', 'html', 'javascript', 'jquery', 'react', 'redux', 'sass', 'webpack', 'ajax', 'git', 'angular', 'aspnet', 'csharp', 'sql'];
+const imageNames = ['bootstrap', 'css', 'html', 'javascript', 'jquery', 'react', 'redux', 'sass', 'webpack', 'ajax', 'git', 'angular', 'aspnet', 'csharp', 'sql', 'azure'];
 
 window.addEventListener('resize', () => {
     // resize canvas on window size change
