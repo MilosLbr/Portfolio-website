@@ -1,37 +1,46 @@
 .jumpUp{
+    -webkit-animation: jumpUp 1.4s ease-in;
     animation: jumpUp 1.4s ease-in;
 }
 .fallDown{
+    -webkit-animation: fallDown 2.2s linear forwards, float 15s ease-in-out 2.2s infinite ;
     animation: fallDown 2.2s linear forwards, float 15s ease-in-out 2.2s infinite ;
 }
 
 .floatInBottom{
+    -webkit-animation: floatInBottom 0.9s ease-out forwards;
     animation: floatInBottom 0.9s ease-out forwards;
 }
 
 .floatInFromLeft{
+    -webkit-animation: floatInFromLeft 0.4s ease-out forwards;
     animation: floatInFromLeft 0.4s ease-out forwards;
 }
 
 .floatInFromRight{
+    -webkit-animation: floatInFromRight 0.4s ease-out forwards;
     animation: floatInFromRight 0.4s ease-out forwards;
 }
 
 .delay05{
+    -webkit-animation-delay: 0.5s;
     animation-delay: 0.5s;
 }
 
 .delay1{
+    -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
 
 @keyframes jumpUp{
     from{
+        -webkit-transform: translateY(70px);
         transform: translateY(70px);
         opacity: 0;
     }
     to{
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         opacity: 1;
     }
@@ -39,43 +48,55 @@
 
 @keyframes fallDown{
     0%{
+        -webkit-transform: translateY(-1000px)  rotateY(0deg) rotateZ(0deg);
         transform: translateY(-1000px)  rotateY(0deg) rotateZ(0deg);
     }
     50%{
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
     }
     60%{
+        -webkit-transform: translateY(-35px) rotateY(-2deg) rotateZ(2deg);
         transform: translateY(-35px) rotateY(-2deg) rotateZ(2deg);
     }
     70%{
+        -webkit-transform: translateY(0px) rotateY(-4deg) rotateZ(2deg);
         transform: translateY(0px) rotateY(-4deg) rotateZ(2deg);
     }
     80%{
+        -webkit-transform: translateY(-18px) rotateY(-6deg) rotateZ(2deg);
         transform: translateY(-18px) rotateY(-6deg) rotateZ(2deg);
     }
     90%{
+        -webkit-transform: translateY(0px) rotateY(-8deg) rotateZ(2deg);
         transform: translateY(0px) rotateY(-8deg) rotateZ(2deg);
     }
     95%{
+        -webkit-transform: translateY(-10px) rotateY(-10deg) rotateZ(2deg);
         transform: translateY(-10px) rotateY(-10deg) rotateZ(2deg);
         
     }
     99%{
+        -webkit-transform: translateY(0px) rotateY(-12deg) rotateZ(3deg);
         transform: translateY(0px) rotateY(-12deg) rotateZ(3deg);
     }
     100%{
+        -webkit-transform: translate(0, 0px)   rotateY(-12deg) rotateZ(3deg);
         transform: translate(0, 0px)   rotateY(-12deg) rotateZ(3deg);
     }
 }
 
 @keyframes float{
     from {
+            -webkit-transform: translate(0, 0px) rotateY(-12deg) rotateZ(3deg);
             transform: translate(0, 0px) rotateY(-12deg) rotateZ(3deg);
       }
       65% {
+            -webkit-transform: translate(0, 15px) rotateY(10deg) rotateX(10deg) rotateZ(-3deg);
             transform: translate(0, 15px) rotateY(10deg) rotateX(10deg) rotateZ(-3deg);
       }
       to {
+            -webkit-transform: translate(0, 0px) rotateY(-12deg) rotateZ(3deg);
             transform: translate(0, 0px) rotateY(-12deg) rotateZ(3deg);
       }
 }
@@ -91,9 +112,11 @@
 
 @keyframes jumpingArow{ 
     4%, 12%, 20%{
+        -webkit-transform: translateY(-8px) rotate(45deg);
         transform: translateY(-8px) rotate(45deg);
     }
     8%, 16%, 24%{
+        -webkit-transform: translateY(-2px) rotate(45deg);
         transform: translateY(-2px) rotate(45deg);
     }
 }
@@ -101,11 +124,13 @@
 @keyframes floatInBottom{
     from {
         opacity: 0;
+        -webkit-transform: translateY(50px);
         transform: translateY(50px);
         visibility: hidden;
     }
     to{
         opacity: 1;
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         visibility: visible;
     }
@@ -114,11 +139,13 @@
 @keyframes floatInFromLeft{
     from {
         opacity: 0;
+        -webkit-transform: translateX(-100px);
         transform: translateX(-100px);
         visibility: hidden;
     }
     to{
         opacity: 1;
+        -webkit-transform: translateX(0px);
         transform: translateX(0px);
         visibility: visible;
     }
@@ -127,11 +154,13 @@
 @keyframes floatInFromRight{
     from {
         opacity: 0;
+        -webkit-transform: translateX(100px);
         transform: translateX(100px);
         visibility: hidden;
     }
     to{
         opacity: 1;
+        -webkit-transform: translateX(0px);
         transform: translateX(0px);
         visibility: visible;
     }
